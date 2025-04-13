@@ -84,7 +84,7 @@
                                                 @php 
                                                     $after_discount=($product_detail->price-(($product_detail->price*$product_detail->discount)/100));
                                                 @endphp
-												<p class="price"><span class="discount">${{number_format($after_discount,2)}}</span><s>${{number_format($product_detail->price,2)}}</s> </p>
+												<p class="price"><span class="discount">{{number_format($after_discount,2)}XOF</span><s>${{number_format($product_detail->price,2)}}</s> </p>
 												<p class="description">{!!($product_detail->summary)!!}</p>
 											</div>
 											<!--/ End Description -->
@@ -348,7 +348,7 @@
                                                 $after_discount=($data->price-(($data->discount*$data->price)/100));
                                             @endphp
                                             <span class="old">${{number_format($data->price,2)}}</span>
-                                            <span>${{number_format($after_discount,2)}}</span>
+                                            <span>{{number_format($after_discount,2)}XOF</span>
                                         </div>
                                       
                                     </div>
@@ -412,7 +412,7 @@
                                     <span><i class="fa fa-check-circle-o"></i> in stock</span>
                                 </div>
                             </div>
-                            <h3>$29.00</h3>
+                            <h3>29.00XOF</h3>
                             <div class="quickview-peragraph">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam.</p>
                             </div>

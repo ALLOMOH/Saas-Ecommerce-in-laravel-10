@@ -1,5 +1,5 @@
 <!-- Meta Tag -->
-@yield('meta')
+@yield(section: 'meta')
 <!-- Title Tag  -->
 <title>@yield('title')</title>
 <!-- Favicon -->

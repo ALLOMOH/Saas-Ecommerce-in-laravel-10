@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','E-SHOP || HOME PAGE')
+@section('title','FD-SHOP || HOME PAGE')
 @section('main-content')
 <!-- Slider Area -->
 @if(count($banners)>0)
@@ -144,7 +144,7 @@
                                                 @php
                                                     $after_discount=($product->price-($product->price*$product->discount)/100);
                                                 @endphp
-                                                <span>${{number_format($after_discount,2)}}</span>
+                                                <span>{{number_format($after_discount,2)}}XOF</span>
                                                 <del style="padding-left:4%;">${{number_format($product->price,2)}}</del>
                                             </div>
                                         </div>
@@ -239,7 +239,7 @@
                                     @php
                                     $after_discount=($product->price-($product->price*$product->discount)/100)
                                     @endphp
-                                    <span>${{number_format($after_discount,2)}}</span>
+                                    <span>{{number_format($after_discount,2)}}XOF</span>
                                 </div>
                             </div>
                         </div>
@@ -345,7 +345,7 @@
                 <div class="single-service">
                     <i class="ti-rocket"></i>
                     <h4>Free shiping</h4>
-                    <p>Orders over $100</p>
+                    <p>Orders over 100XOF</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -447,7 +447,7 @@
                                         @php
                                             $after_discount=($product->price-($product->price*$product->discount)/100);
                                         @endphp
-                                        <h3><small><del class="text-muted">${{number_format($product->price,2)}}</del></small>    ${{number_format($after_discount,2)}}  </h3>
+                                        <h3><small><del class="text-muted">${{number_format($product->price,2)}}</del></small>    {{number_format($after_discount,2)}}XOF  </h3>
                                         <div class="quickview-peragraph">
                                             <p>{!! html_entity_decode($product->summary) !!}</p>
                                         </div>
